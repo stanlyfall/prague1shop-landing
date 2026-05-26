@@ -8,18 +8,23 @@
   const handle = document.getElementById('tg-handle');
   if (handle && cfg.telegramHandle) handle.textContent = cfg.telegramHandle;
 
-  const promo = document.getElementById('promo-code');
-  if (promo && cfg.promoCode) promo.textContent = cfg.promoCode;
+  const title = document.getElementById('offer-title');
+  if (title && cfg.offerTitle) title.textContent = cfg.offerTitle;
+
+  const tagline = document.getElementById('offer-tagline');
+  if (tagline && cfg.offerTagline) tagline.textContent = cfg.offerTagline;
+
+  const perksList = document.getElementById('perks-list');
+  if (perksList && Array.isArray(cfg.perks)) {
+    const handleHtml = cfg.telegramHandle
+      ? `<li>☘️ <span id="tg-handle">${cfg.telegramHandle}</span></li>`
+      : '';
+    perksList.innerHTML =
+      cfg.perks.map((p) => `<li>${p}</li>`).join('') + handleHtml;
+  }
 
   if (cfg.siteTitle) document.title = cfg.siteTitle;
 
   const desc = document.querySelector('meta[name="description"]');
   if (desc && cfg.siteDescription) desc.setAttribute('content', cfg.siteDescription);
-
-  const ogTitle = document.querySelector('meta[property="og:title"]');
-  if (ogTitle && cfg.siteTitle) ogTitle.setAttribute('content', cfg.siteTitle);
-
-  const ogDesc = document.querySelector('meta[property="og:description"]');
-  if (ogDesc && cfg.siteDescription) ogDesc.setAttribute('content', cfg.siteDescription);
-
 })();
