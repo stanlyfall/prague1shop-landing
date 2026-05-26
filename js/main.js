@@ -2,9 +2,8 @@
   const cfg = window.SITE_CONFIG || {};
   const url = cfg.TELEGRAM_GROUP_URL || 'https://t.me/+PK0EMK2E8v5hOWM0';
 
-  document.querySelectorAll('#tg-cta, #tg-cta-bottom').forEach((el) => {
-    el.href = url;
-  });
+  const cta = document.getElementById('tg-cta');
+  if (cta) cta.href = url;
 
   const handle = document.getElementById('tg-handle');
   if (handle && cfg.telegramHandle) handle.textContent = cfg.telegramHandle;
@@ -23,6 +22,4 @@
   const ogDesc = document.querySelector('meta[property="og:description"]');
   if (ogDesc && cfg.siteDescription) ogDesc.setAttribute('content', cfg.siteDescription);
 
-  const yearEl = document.getElementById('year');
-  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 })();
