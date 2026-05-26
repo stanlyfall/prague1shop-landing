@@ -29,47 +29,47 @@
   <base href="/prague1shop-landing/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/prague1shop-landing/css/style.css?v=3">
-  <style>
-    /* критичные стили — если внешний CSS не загрузится */
-    html,body{height:100%;margin:0}
-    body{font-family:system-ui,-apple-system,sans-serif;background:#2d1163;color:#fff}
-    .screen{min-height:100vh;min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:16px;box-sizing:border-box}
-    .card{width:100%;max-width:360px;background:#1a1d28;border-radius:24px;padding:32px 24px 24px;text-align:center;box-sizing:border-box}
-    .btn-cta{display:flex;align-items:center;justify-content:center;width:100%;min-height:60px;margin-top:12px;padding:18px;font-size:1.05rem;font-weight:700;letter-spacing:.06em;text-decoration:none;color:#0a0a0a!important;background:#d4f54d;border-radius:999px;box-shadow:0 6px 0 #0a0a0a;box-sizing:border-box}
-    .perks{list-style:none;padding:0;margin:16px 0;text-align:left}
-    .perks li{margin:8px 0;font-size:.9rem}
-  </style>
+  <link rel="stylesheet" href="/prague1shop-landing/css/style.css?v=4">
 </head>
 <body>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="splatter splatter--1" aria-hidden="true"></div>
+  <div class="splatter splatter--2" aria-hidden="true"></div>
+
   <main class="screen">
     <article class="card">
+      <div class="card__badge">PRAGUE · 10% OFF · <span id="promo-code">INSTA420</span></div>
+
       <div class="card__logo" aria-hidden="true">
-        <svg viewBox="0 0 80 80" width="72" height="72">
-          <circle cx="40" cy="40" r="36" fill="none" stroke="#fff" stroke-width="2.5"/>
-          <path fill="#4ade80" d="M40 18c-6 12-16 18-16 30a16 16 0 0 0 32 0c0-12-10-18-16-30z"/>
+        <svg viewBox="0 0 88 88" width="80" height="80">
+          <circle cx="44" cy="44" r="40" fill="#0f0a18" stroke="#c6f135" stroke-width="3"/>
+          <path fill="#4ade80" d="M44 20c-7 13-18 20-18 32a18 18 0 0 0 36 0c0-12-11-19-18-32z"/>
         </svg>
       </div>
 
-      <h1 class="card__title" id="offer-title">Number 1 Shop in Prague</h1>
+      <h1 class="card__title" id="offer-title">Number 1 Shop<br>in Prague</h1>
       <p class="card__tagline" id="offer-tagline">Pick-up &amp; delivery</p>
 
       <ul class="perks" id="perks-list">
-        <li>📍 Prague centre</li>
-        <li>🛵 Fast delivery</li>
-        <li>🛡️ Premium quality</li>
-        <li>☘️ <span id="tg-handle">@prague1shop</span></li>
+        <li><span class="perks__icon">📍</span> Prague centre</li>
+        <li><span class="perks__icon">🛵</span> Fast delivery</li>
+        <li><span class="perks__icon">🛡️</span> Premium quality</li>
       </ul>
 
+      <p class="card__handle">☘️ Order: <span id="tg-handle">@prague1shop</span></p>
+
       <a id="tg-cta" class="btn-cta" href="#" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+        </svg>
         OPEN IN TELEGRAM
       </a>
     </article>
   </main>
 
-  <script src="/prague1shop-landing/js/config.js?v=3"></script>
-  <script src="/prague1shop-landing/js/main.js?v=3"></script>
+  <script src="/prague1shop-landing/js/config.js?v=4"></script>
+  <script src="/prague1shop-landing/js/main.js?v=4"></script>
 </body>
 </html>
