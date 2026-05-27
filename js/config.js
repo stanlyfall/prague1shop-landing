@@ -1,15 +1,15 @@
 const SITE_CONFIG = {
-  /** Прямая ссылка на Telegram */
-  TELEGRAM_GROUP_URL: 'https://t.me/prague1shop',
+  /** Прямая ссылка на Telegram (инвайт) */
+  TELEGRAM_GROUP_URL: 'https://t.me/+ioJEsd0DyixlOWJi',
   telegramHandle: '@prague1shop',
   promoCode: 'INSTA420',
-  siteTitle: 'Number 1 Shop in Prague',
-  siteDescription: 'Pick-up & delivery in Prague. Order in Telegram.',
-  offerTitle: 'Number 1 Shop\nin Prague',
-  offerTagline: 'Pick-up & delivery',
+  siteTitle: '☘️ Pragues N1',
+  siteDescription: '☘️ Pragues N1 — Pick-up & delivery in Prague. Order in Telegram. Use INSTA420 (10% discount).',
+  offerTitle: 'THE REAL THC<br><span class="title__lime">CANNA SHOP</span>',
+  offerTagline: 'PICK-UP & DELIVERY',
   perks: [
-    '📍 Prague centre',
-    '🛵 Fast delivery',
-    '🛡️ Premium quality',
+    '📍 PRAGUE CENTRE',
+    '🛵 FAST DELIVERY',
+    '🛡️ PREMIUM QUALITY',
   ],
 };
