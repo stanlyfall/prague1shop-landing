@@ -5,7 +5,7 @@ const SITE_CONFIG = {
   promoCode: 'INSTA420',
   siteTitle: '☘️ Pragues N1',
   siteDescription: '☘️ Pragues N1 — Pick-up & delivery in Prague. Order in Telegram. Use INSTA420 (10% discount).',
-  offerTitle: 'THE REAL THC<br><span class="title__lime">CANNA SHOP</span>',
+  offerTitle: 'THE REAL THC<br><span class="title__lime">IN PRAGUE</span>',
   offerTagline: 'PICK-UP & DELIVERY',
   perks: [
     '📍 PRAGUE CENTRE',
