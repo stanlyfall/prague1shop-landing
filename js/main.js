@@ -1,6 +1,6 @@
 (function () {
   const cfg = window.SITE_CONFIG || {};
-  const url = cfg.TELEGRAM_GROUP_URL || 'https://t.me/prague1shop';
+  const url = cfg.TELEGRAM_GROUP_URL || 'https://t.me/+ioJEsd0DyixlOWJi';
 
   const cta = document.getElementById('tg-cta');
   if (cta) cta.href = url;
